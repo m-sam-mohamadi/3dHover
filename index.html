@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            height: 100vh;
+            background-color: #b9cbd2;
+            align-items: center;
+        }
+
+        .card-text p {
+            transform: translateZ(100px) scale(.97);
+            text-align: center;
+            font-size: 40px;
+            text-shadow: 0 0 30px #333;
+            font-family: 'Segoe UI';
+            color: white;
+        }
+
+        .card-item {
+            background: linear-gradient(45deg, rgb(247, 89, 16), rgb(144, 12, 221));
+            width: 400px;
+            border-radius: 10px;
+            margin-top: 100px;
+            position: relative;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .1s;
+        }
+
+        img {
+            width: 400px;
+            transition: .3s;
+            transform: translateZ(200px) scale(0.60);
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div style="height: 200px;" class="card-item image first">
+                <div class="card-text">
+                    <p>Sam Tilt</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./script.js" type="module"></script>
+    <script type="module">
+        import { SamTilt } from './script.js'
+        SamTilt({
+            elem: '.card',
+            sensitive: 200,
+            elemItem: '.card-item',
+            shadowSize: 50,
+            scale: 1.2,
+            reset: true,
+            shadowSensitive: 60,
+            glareSize:.2,
+            zoom: true,
+            enableShadow:true,
+            glare:false
+        })
+    </script>
+</body>
+
+</html>
