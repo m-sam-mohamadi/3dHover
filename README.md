@@ -1,5 +1,5 @@
  <div dir="rtl">
- 
+
  # sam tilt library 
 ### این کتابخونه چیست؟
 
@@ -19,15 +19,19 @@
   ## آموزش استفاده
  
  در اینجا ما کتابخونه رو صدا میزنیم، کلاس یا آیدی المنتی که قراره توش کارت های سه بعدیمون قرار بگیره رو بین پرانتز مینویسیم (در پارامتر elem)
+ </div>
 
    ```html
   <script>
       let samTilt = new SamTilt({elem:'.card'})
   </script>
   ```
+
+ <div dir="rtl"> 
+
   ## شخصی سازی کردن
 
-پارامتر های فعلی برای شخصی سازی:
+ پارامتر های فعلی برای شخصی سازی:
 
 - elem
 - elemItem
@@ -40,15 +44,15 @@
 - glareSize
 - justX
 - justY
-- zoom
-- 
+- zoom 
 
+
+ </div>
+ 
   ```html
   <script>
       let samTilt = new SamTilt('.card')
   </script>
-  ```
-  </div>
-
+  ``` 
 
  
