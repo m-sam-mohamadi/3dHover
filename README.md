@@ -1,6 +1,14 @@
  <div dir="rtl">
 
- # sam tilt library 
+
+ ![image info](./img.png) 
+
+<div style="text-align:center;">
+
+ # sam tilt library
+
+</div>
+
 ### این کتابخونه چیست؟
 
  این کتابخونه ساخته شده تا شما بتوانید افکت های زیبا در سایت خود استفاده کنید، افکت هایی مثل:
@@ -46,12 +54,27 @@
 - justY
 - zoom 
 
+---
 
+#### پیشفرض
  </div>
  
   ```html
   <script>
-      let samTilt = new SamTilt('.card')
+ let samTilt = new SamTilt({
+    elem:'.elem',
+    elemItem:'.elemItem',
+    sensitive:200,
+    shadowSize:50,
+    scale:1,
+    reset:true,
+    shadow:true,
+    shadowSensitive: 60,
+    glareSize :.2,
+    justX:false,
+    justY:false,
+    zoom :true,
+ })
   </script>
   ``` 
 
