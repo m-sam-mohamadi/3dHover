@@ -1,5 +1,7 @@
  <div dir="rtl">
 
+![image info](./img.png)
+
  # sam tilt library 
 ### این کتابخونه چیست؟
 
@@ -50,9 +52,22 @@
  </div>
  
   ```html
-  <script>
-      let samTilt = new SamTilt('.card')
-  </script>
+<script>
+let samTilt = new SamTilt({
+  elem:'.elem',
+  elemItem:'.elemItem',
+  sensitive:200,
+  shadowSize:50,
+  scale:1,
+  reset:true,
+  shadow:true,
+  shadowSensitive: 60,
+  glareSize :.2,
+  justX:false,
+  justY:false,
+  zoom :true,
+})
+</script>
   ``` 
 
  
