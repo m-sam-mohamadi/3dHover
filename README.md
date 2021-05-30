@@ -20,12 +20,17 @@
 
   ## آموزش استفاده
  
- در اینجا ما کتابخونه رو صدا میزنیم، کلاس یا آیدی المنتی که قراره توش کارت های سه بعدیمون قرار بگیره رو بین پرانتز مینویسیم (در پارامتر elem)
+در اینجا کتابخونه رو صدا میزنیم و قیمت پایین ازش استفاده میکنیم
  </div>
 
+
    ```html
-  <script>
-      let samTilt = new SamTilt({elem:'.card'})
+  <script src="./samTilt.js" type="module"></script>
+  ```
+
+   ```html
+  <script type="module">
+      import {samTilt} from "./samTilt"
   </script>
   ```
 
@@ -52,8 +57,10 @@
  </div>
  
   ```html
-<script>
-let samTilt = new SamTilt({
+<script type="module">
+import {samTilt} from "./samTilt"
+
+ SamTilt({
   elem:'.elem',
   elemItem:'.elemItem',
   sensitive:200,
@@ -70,4 +77,4 @@ let samTilt = new SamTilt({
 </script>
   ``` 
 
- 
+ > نکته مهم اینه که باید رو یک لوکال هاست یا لایو سرور اجرا کنید
